@@ -1,0 +1,4 @@
+server:
+  port: 8081
+prop:
+  test: dev_profile

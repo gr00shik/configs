@@ -1,8 +1,0 @@
-app:
-  redis:
-    url: redis://localhost:6379
-
-spring:
-  config:
-    activate:
-      on-profile: cache
