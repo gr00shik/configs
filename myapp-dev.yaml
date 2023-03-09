@@ -5,4 +5,4 @@ server:
 spring:
   profiles:
     include:
-      - core
+      - config/core
