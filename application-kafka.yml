@@ -1,7 +1,4 @@
 spring:
-  config:
-    activate:
-      on-profile: kafka
   kafka:
     bootstrap-servers: localhost:29092
     consumer:
