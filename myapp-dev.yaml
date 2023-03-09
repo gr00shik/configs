@@ -2,7 +2,3 @@ test:
   prop: hello2
 server:
   port: 8081
-spring:
-  profiles:
-    include:
-      - core
