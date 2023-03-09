@@ -1,4 +1,4 @@
 test:
-  prop: hello
+  prop: hello2
 server:
   port: 8081
