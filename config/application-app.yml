@@ -1,0 +1,35 @@
+spring:
+  config:
+    activate:
+      on-profile: app
+
+
+app:
+  baseURL: bl-bonuses
+  birthdayAwardValue: 250000
+  loyaltyStartAward: 250000
+  invitationRewardValue: 250000
+  isEnableTranslation: false
+  kafka:
+    group:
+      globalEventGroup: bonuses-pa-group
+    topic:
+      welcomeBonusEventTopic: GE_CLIENT_INS
+      invitationComplete: GE_INVITATION_COMPLETE
+      birthdayBonusEventTopic: GE_CLIENT_BIRTHDAY
+  processing:
+    initiatorRid: AVOBank_RTP
+    processorInstName: AVOBank
+  client:
+    processing:
+      url: http://10.63.16.20:13600
+    avotech-bl-users:
+      url: http://localhost:8888
+    accumulator:
+      url: http://localhost:8889
+    invitation:
+      url: http://localhost:8887
+    avotech-bl-notification-builder:
+      url: http://localhost:8085
+    avotech-bl-localizer:
+      url: http://localhost:8095

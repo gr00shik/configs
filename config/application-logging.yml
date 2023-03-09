@@ -1,0 +1,26 @@
+spring:
+  config:
+    activate:
+      on-profile: logging
+
+
+logging:
+  level:
+    ROOT: info
+    uz.avotech: debug
+    org:
+      springframework:
+        ws:
+          client:
+            MessageTracing:
+              sent: TRACE
+              received: TRACE
+          server:
+            MessageTracing:
+              sent: TRACE
+              received: TRACE
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: basic
