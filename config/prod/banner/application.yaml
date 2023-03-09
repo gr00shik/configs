@@ -1,4 +1,4 @@
 server:
   port: 8081
 prop:
-  test: test_profile_bl
+  test: prod_profile
