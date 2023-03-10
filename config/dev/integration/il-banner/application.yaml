@@ -1,7 +1,7 @@
 server:
   port: 8081
 prop:
-  test: dev_profile
+  test: dev_profile_i
 management:
   endpoints:
     web:
