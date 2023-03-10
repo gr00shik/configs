@@ -1,0 +1,9 @@
+server:
+  port: 8081
+prop:
+  test: dev_profile
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, bus-refresh, beans, env
